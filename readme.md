@@ -8,3 +8,8 @@ $ cd eclipse
 $ pnpm i
 $ pnpm run bstart
 ```
+
+## Credit
+- Nebula 
+    - Bare Wisp, and Rammerhead Integration
+    - https://github.com/NebulaServices/Nebula/blob/main/server.ts

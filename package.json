@@ -1,7 +1,10 @@
 {
   "name": "eclipse",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Modern Webproxy",
+  "author": "Entrpix",
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "repository": "https://github.com/entrpix/eclipse",
   "type": "module",
   "scripts": {
     "dev": "vite",

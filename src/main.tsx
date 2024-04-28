@@ -1,5 +1,20 @@
-import { render } from 'preact'
-import { App } from './app.tsx'
-import './index.css'
+import { Suspense, lazy } from "preact/compat";
+import { render } from "preact";
 
-render(<App />, document.getElementById('app')!)
+const Routes = lazy(() => import("./routes"));
+
+export default function App() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Routes />
+        </Suspense>
+    );
+};
+
+const appElement = document.getElementById("app");
+if (appElement) {
+    render(
+        <App />,
+        appElement
+    );
+}

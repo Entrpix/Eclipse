@@ -1,4 +1,4 @@
-// Credit: https://github.com/NebulaServices/Nebula/blob/main/server.ts
+// Credit: Nebula
 
 const createRammerhead = require("rammerhead/src/server/index.js");
 const { createBareServer } = require("@tomphttp/bare-server-node");

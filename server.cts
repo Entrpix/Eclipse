@@ -31,5 +31,5 @@ httpServer.on("upgrade", upgradeHandler);
 const port: number = 3000;
 
 httpServer.listen(port, () => {
-    console.log(`Eclipse Server is Running on port: ${port}`);
+    console.log(`Eclipse Server is Running on port: ${port}\nFrontend is Running on Port: 8000`);
 });

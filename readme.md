@@ -8,7 +8,3 @@ $ cd eclipse
 $ pnpm i
 $ pnpm run bstart
 ```
-
-## Credit
-- Nebula 
-    - Various code snippets stolen from them

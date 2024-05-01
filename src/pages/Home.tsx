@@ -1,12 +1,14 @@
-import { Proxy } from "../util/Proxy";
+import { useState } from 'preact/hooks';
+import { ProxyFrame } from "../components/ProxyFrame";
 import "../style.css"
 
 export function Home() {
+  const [url, setUrl] = useState<string | null>(null);
+
   const handleSubmit = (event: any) => {
     event.preventDefault();
     const form = event.target;
-    const url = form.url.value;
-    Proxy(url);
+    setUrl(form.url.value);
   };
   
   return (
@@ -17,6 +19,7 @@ export function Home() {
           Submit
         </button>
       </form>
+      {url && <ProxyFrame URL={url} />}
     </div>
   );
 }

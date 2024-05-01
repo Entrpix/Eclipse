@@ -5,6 +5,6 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   plugins: [preact()],
   server: {
-    port: 8000
+    port: 3000
   }
 })

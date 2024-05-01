@@ -5,6 +5,11 @@ import { Home } from "./pages/Home";
 import "./style.css";
 
 export default function Routes() {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/index.js", {
+        scope: "/"
+    });
+}
   return (
     <LocationProvider>
       <Router>
